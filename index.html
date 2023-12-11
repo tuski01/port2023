@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+
+    <!-- main file css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- BoxIcons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./images/logo.png" alt="" class="img-fluid" />
+        </a>
+        <ul class="menu">
+          <li class="menu_item">
+            <a href="#hero" class="menu_link active_link">Home</a>
+          </li>
+          <li class="menu_item">
+            <a href="#about" class="menu_link">About</a>
+          </li>
+          <li class="menu_item">
+            <a href="#resume" class="menu_link">Resume</a>
+          </li>
+          <li class="menu_item">
+            <a href="#portfolio" class="menu_link">Portfolio</a>
+          </li>
+          <li class="menu_item">
+            <a href="#Contact" class="menu_link">Contact</a>
+          </li>
+          <ion-icon name="close-outline" class="close_icon"></ion-icon>
+        </ul>
+        <ion-icon name="menu-outline" class="toggle_icon"></ion-icon>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero section" id="hero">
+        <div class="hero_container container grid">
+          <div class="hero_content">
+            <h4>안녕하세요</h4>
+            <h1>
+              선병철 입니다.
+              <!-- <span class="typed" data-typed-items="Designer, Developer, Freelancer"></span> -->
+            </h1>
+            <p>Back-End 개발자를 희망하고 있습니다.</p>
+            <div class="hero_social">
+              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+            <a href="#contact" class="btn">
+              Read More
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <div class="hero_img">
+            <img src="./images/hero.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about section" id="about">
+        <h2 class="section_title">About Me</h2>
+        <div class="about_container container">
+          <div class="about_content">
+            <div class="about_info">
+              <div>
+                <span class="number">이름</span>
+                <br />
+                <span class="text">선병철</span>
+              </div>
+              <div>
+                <span class="number">생년월일</span>
+                <br />
+                <span class="text">2000.06.18</span>
+              </div>
+              <div>
+                <span class="number">연락처</span>
+                <br />
+                <span class="text">010-2267-9147</span>
+              </div>
+              <div>
+                <span class="number">이메일</span>
+                <br />
+                <span class="text">tuski0@naver.com</span>
+              </div>
+              <div>
+                <span class="number">주소지</span>
+                <br />
+                <span class="text">강원도 동해시</span>
+              </div>
+              <div>
+                <span class="number">학력</span>
+                <br />
+                <span class="text"
+                  >신구대학교 <br />
+                  IT소프트웨어과</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume Section -->
+      <section class="resume section" id="resume">
+        <h2 class="section_title">Resume</h2>
+
+        <div class="resume_container container grid">
+          <div class="resume_tabs">
+            <ul>
+              <li>
+                <a href="#page-1" class="current">Education</a>
+              </li>
+              <li>
+                <a href="#page-2">Front-End</a>
+              </li>
+              <li>
+                <a href="#page-3">Back-End</a>
+              </li>
+              <li>
+                <a href="#page-4">Tools</a>
+              </li>
+              <li>
+                <a href="#page-5">Qualificate</a>
+              </li>
+            </ul>
+          </div>
+          <div class="resume_content">
+            <div id="page-1" class="page one">
+              <div class="page_heading">Education</div>
+              <div class="resume_wrap">
+                <div class="resume_wrap-icon">
+                  <ion-icon name="school-outline"></ion-icon>
+                </div>
+                <div class="resume_wrap-content">
+                  <span class="date">2021-2024</span>
+                  <h4>IT소프트웨어과</h4>
+                  <span class="position">신구대학교</span>
+                </div>
+              </div>
+              <div class="resume_wrap">
+                <div class="resume_wrap-icon">
+                  <ion-icon name="school-outline"></ion-icon>
+                </div>
+                <div class="resume_wrap-content">
+                  <span class="date">2015-2018</span>
+                  <h4>자동화기계과</h4>
+                  <span class="position">삼척마이스터고</span>
+                </div>
+              </div>
+            </div>
+            <div id="page-2" class="page two">
+              <div class="page_heading">Front-End Skills</div>
+              <div class="progressBoxs grid">
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>HTML</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>CSS</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Javascript</span>
+                    <span>60%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 60%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>React</span>
+                    <span>50%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Next.js</span>
+                    <span>50%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>TailwindCSS</span>
+                    <span>60%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 60%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="page-3" class="page three">
+              <div class="page_heading">Back-End Skills</div>
+              <div class="progressBoxs grid">
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>PHP</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Node.js</span>
+                    <span>60%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 60%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>JAVA</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Spring</span>
+                    <span>50%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Firebase</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Mysql</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>JSP</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="page-4" class="page four">
+              <div class="page_heading">Tools</div>
+              <div class="progressBoxs grid">
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Android Studio</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Eclipse</span>
+                    <span>60%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 60%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>IntelliJ</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Figma</span>
+                    <span>50%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Github</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>VS Code</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="page-5" class="page five">
+              <div class="page_heading">Qualificate</div>
+              <div class="resume_wrap">
+                <div class="resume_wrap-icon">
+                  <ion-icon name="podium-outline"></ion-icon>
+                </div>
+                <div class="resume_wrap-content">
+                  <span class="date">2016.06.24</span>
+                  <h4>설비보전 기능사</h4>
+                  <span class="position"></span>
+                </div>
+              </div>
+              <div class="resume_wrap">
+                <div class="resume_wrap-icon">
+                  <ion-icon name="podium-outline"></ion-icon>
+                </div>
+                <div class="resume_wrap-content">
+                  <span class="date">2016.09.28</span>
+                  <h4>정보처리 기능사</h4>
+                  <span class="position"></span>
+                </div>
+              </div>
+              <div class="resume_wrap">
+                <div class="resume_wrap-icon">
+                  <ion-icon name="podium-outline"></ion-icon>
+                </div>
+                <div class="resume_wrap-content">
+                  <span class="date">2017.07.07</span>
+                  <h4>전산응용기계제도 기능사</h4>
+                  <span class="position"></span>
+                </div>
+              </div>
+              <div class="resume_wrap">
+                <div class="resume_wrap-icon">
+                  <ion-icon name="podium-outline"></ion-icon>
+                </div>
+                <div class="resume_wrap-content">
+                  <span class="date">2023.11.30</span>
+                  <h4>SW 코딩 자격 1급</h4>
+                  <span class="position"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio section -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section_title">Portfolio</h2>
+
+        <div class="portfolio_container container">
+          <ul class="portfolio_filters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app" class="filter-app">App</li>
+            <li data-filter=".filter-web" class="filter-web">Web</li>
+          </ul>
+          <div class="portfolio_wrap-container">
+            <div class="portfolio_item filter-web">
+              <div class="portfolio_wrap">
+                <img src="./images/portfolio.png" alt="" class="img-fluid">
+                <div class="portfolio_info">
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio_links">
+                    <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="#"></a><ion-icon name="link-outline"></ion-icon></a>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio_detail">
+              <p>[1人] Html, CSS, JS를 이용한<br> 기초적인 포트폴리오입니다</p>
+            </div>
+            </div>
+            <div class="portfolio_item filter-app">
+              <div class="portfolio_wrap">
+                <img src="./images/dcj.png" alt="" class="img-fluid">
+                <div class="portfolio_info">
+                  <h4>App 3</h4>
+                  <p>App</p>
+                  <div class="portfolio_links">
+                    <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="#"></a><ion-icon name="link-outline"></ion-icon></a>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio_detail">
+                <p>[2人] Java, PHP, Firebase, Linux를 이용한 <br>분실/습득 물건의 주인을 찾아주는 앱입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contact Me</h2>
+
+        <div class="contact_container container">
+          <div class="contact_content">
+            <div class="inputs">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+            </div>
+            <input type="password" placeholder="Password">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <a href="#" class="btn">Send Message<ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer_bg">
+          <div class="footer_container container">
+            <div class="main_footer">
+              <div class="footer_social">
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+              <h3>Seon</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum rem voluptatum laboriosam, non id delectus facilis officiis recusandae at esse aliquam corrupti sit laborum est vel mollitia doloremque ut.</p>
+            </div>
+            <div class="footer_copy">&#169; Seon. All right reserved</div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+
+
+    <!-- MixItUp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- ionIcons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Main Scripts -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
